@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+<remote  name="aosp"
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com"
+           revision="refs/tags/android-6.0.1_r13" />
 
-  <remote  name="aosp"
-           fetch="https://android.googlesource.com"/>
+<remote  name="bizcuite"
+           fetch="https://github.com/bizcuite"
+           revision="refs/heads/aosp-6.0" />
+           
+  <remote  name="github"
+           fetch=".."/>
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
-  
-  <remote  name="github"
-           revision="refs/heads/aosp-6.0"
-           fetch="https://github.com/bizcuite"/>
-  
-  <remote  name="bizcuite"
-           revision="refs/heads/aosp-6.0"
-           fetch="https://github.com/bizcuite"/>
 
-  <default revision="refs/tags/android-6.0.1_r13"
-           remote="aosp"
-           sync-j="4"/>
-
+  <default revision="refs/heads/aosp-6.0"
+           remote="github"
+           sync-c="true"
+           sync-j="4" />
+           
 <!-- MY PROJECT -->
   <project path="build" name="android_build" remote="bizcuite" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
