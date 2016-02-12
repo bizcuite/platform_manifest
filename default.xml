@@ -4,8 +4,7 @@
            fetch="https://android.googlesource.com"/>
 
   <remote  name="github"
-           revision="aosp-6.0"
-           fetch="https://github.com/bizcuite"/>
+           fetch="https://github.com"/>
   
   <remote  name="bizcuite"
            revision="aosp-6.0"
