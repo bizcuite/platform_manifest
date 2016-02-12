@@ -26,7 +26,7 @@
   <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="bizcuite" />
   <project path="kernel/samsung/smdk4412" name="android_kernel_samsung_smdk4412" remote="bizcuite"/>
   <project path="packages/apps/SamsungServiceMode" name="android_packages_apps_SamsungServiceMode" remote="bizcuite" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="bizcuite" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="bizcuite" />
 
 <!-- END OF MY PROJECT -->
 
