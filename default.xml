@@ -5,8 +5,8 @@
            fetch="https://android.googlesource.com" />
 
   <remote  revision="refs/heads/aosp-6.0"
-           name="bizcuite"
-           fetch="ssh://git@github.com/bizcuite" />
+           name="github"
+           fetch="ssh://git@github.com:bizcuite" />
 
   <remote  name="bizcuite"
            fetch="https://github.com/bizcuite"
