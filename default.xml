@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
-           fetch=".."
-           review="https://android-review.googlesource.com/" />
-  <default revision="master"
+ <remote  name="aosp"
+           fetch="https://android.googlesource.com" />
+
+  <remote  name="bizcuite"
+           fetch="https://github.com/bizcuite"
+           revision="refs/heads/aosp-6.0" />
+
+  <default revision="refs/tags/android-6.0.1_r13"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="platform/build" groups="pdk,tradefed" >
+<!-- MY PROJECT -->
+  <project path="build" name="android_build" remote="bizcuite" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+
+  <project path="platform_manifest" name="platform_manifest" remote="bizcuite" />
+  <!-- It will wait that i finish the code before to include it to manifest 
+  <project path="device/samsung/n7100" name="device_samsung_n7100" remote="bizcuite" />-->
+  <project path="device/samsung/smdk4412-common" name="device_samsung_smdk4412-common" remote="bizcuite" />
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="bizcuite" />
+  <project path="kernel/samsung/smdk4412" name="android_kernel_samsung_smdk4412" remote="bizcuite"/>
+  <project path="packages/apps/SamsungServiceMode" name="android_packages_apps_SamsungServiceMode" remote="bizcuite" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="bizcuite" />
+
+<!-- END OF MY PROJECT -->
+
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
   <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" />
   <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" >
