@@ -3,9 +3,6 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"/>
 
-  <remote  name="private"
-           fetch="ssh://git@github.com" />
-  
   <remote  name="github"
            revision="aosp-6.0"
            fetch="https://github.com/bizcuite"/>
