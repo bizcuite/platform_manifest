@@ -11,7 +11,7 @@
            fetch="https://github.com/bizcuite"/>
   
   <remote  name="bizcuite"
-           revision="refs/heads/aosp-6.0"
+           revision="aosp-6.0"
            fetch="https://github.com/bizcuite"/>
 
   <default revision="refs/tags/android-6.0.1_r13"
