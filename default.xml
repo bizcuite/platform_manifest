@@ -4,8 +4,8 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com" />
 
-  <remote  revision="refs/heads/aosp-6.0" 
-           name="github"
+  <remote  revision="refs/heads/aosp-6.0"
+           name="bizcuite"
            fetch="ssh://git@github.com/bizcuite" />
 
   <remote  name="bizcuite"
@@ -21,7 +21,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="platform_manifest" name="platform_manifest" remote="bizcuite" />
+<!--  <project path="platform_manifest" name="platform_manifest" remote="bizcuite" /> -->
   <!-- It will wait that i finish the code before to include it to manifest 
   <project path="device/samsung/n7100" name="device_samsung_n7100" remote="bizcuite" />-->
   <project path="device/samsung/smdk4412-common" name="device_samsung_smdk4412-common" remote="bizcuite" />
