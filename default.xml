@@ -2,19 +2,19 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="https://android.googlesource.com" />
+           fetch="https://android.googlesource.com"/>
 
   <remote  revision="refs/heads/aosp-6.0"
            name="github"
-           fetch="ssh://git@github.com:bizcuite" />
+           fetch="https://github.com/bizcuite"/>
 
   <remote  name="bizcuite"
            fetch="https://github.com/bizcuite"
-           revision="refs/heads/aosp-6.0" />
+           revision="refs/heads/aosp-6.0"/>
 
   <default revision="refs/tags/android-6.0.1_r13"
            remote="aosp"
-           sync-j="4" />
+           sync-j="4"/>
 
 <!-- MY PROJECT -->
   <project path="build" name="android_build" remote="bizcuite" groups="pdk,tradefed" >
