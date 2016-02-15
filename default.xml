@@ -33,7 +33,7 @@
   <project path="kernel/samsung/smdk4412" name="android_kernel_samsung_smdk4412" remote="bizcuite"/>
   <project path="packages/apps/SamsungServiceMode" name="android_packages_apps_SamsungServiceMode" remote="bizcuite" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="bizcuite" />
-  <project name="bizcuite/android_hardware_libhardware" path="hardware/libhardware" remote="bizcuite" />
+  <project name="android_hardware_libhardware" path="hardware/libhardware" remote="bizcuite" />
   
 <!-- END OF MY PROJECT -->
 
