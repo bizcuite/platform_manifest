@@ -33,7 +33,8 @@
   <project path="kernel/samsung/smdk4412" name="android_kernel_samsung_smdk4412" remote="bizcuite"/>
   <project path="packages/apps/SamsungServiceMode" name="android_packages_apps_SamsungServiceMode" remote="bizcuite" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="bizcuite" />
-
+  <project name="bizcuite/android_hardware_libhardware" path="hardware/libhardware" remote="github"  revision="bizcuite" />
+  
 <!-- END OF MY PROJECT -->
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -344,8 +345,8 @@
   <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" />
   <project path="hardware/intel/sensors" name="platform/hardware/intel/sensors" groups="intel_sensors" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
-<!--  <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" /> -->
+<!--  <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" /> -->
+  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
   <project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt" />
   <project path="hardware/mediatek" name="platform/hardware/mediatek" groups="mediatek,mediatek_wear" />
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
