@@ -15,14 +15,14 @@
            sync-j="4"/>
            
 <!-- MY PROJECT -->
-  <!--<project path="build" name="platform_build" remote="bizcuite" groups="pdk,tradefed" >
+  <project path="build" name="platform_build" remote="bizcuite" groups="pdk,tradefed" >
      <copyfile src="core/root.mk" dest="Makefile" />
-  </project>-->
+  </project>
   
-<!-- test to change to build from CM-->
+<!-- test to change to build from CM
 <project path="build" name="android_build" remote="bizcuite" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
- </project>
+ </project>-->
 
 <!--  <project path="platform_manifest" name="platform_manifest" remote="bizcuite" /> -->
   <!-- It will wait that i finish the code before to include it to manifest 
